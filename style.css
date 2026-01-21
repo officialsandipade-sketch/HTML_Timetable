@@ -1,0 +1,118 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Body */
+body {
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Header (Centered Logo + H1) */
+header {
+    background: rgba(255, 255, 255, 0.95);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 25px 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+header img {
+    border-radius: 12px;
+}
+
+header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #203a43;
+}
+
+/* Main */
+main {
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Table */
+table {
+    width: 100%;
+    max-width: 900px;
+    border-collapse: collapse;
+    background: #ffffff;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+}
+
+/* Table Head */
+thead {
+    background: linear-gradient(135deg, #203a43, #2c5364);
+    color: #ffffff;
+}
+
+thead th {
+    padding: 16px;
+    font-size: 1rem;
+    text-align: left;
+    letter-spacing: 0.5px;
+}
+
+/* Table Body */
+tbody tr {
+    transition: all 0.3s ease;
+}
+
+tbody tr:nth-child(even) {
+    background: #f5f7fa;
+}
+
+tbody tr:hover {
+    background: #e0f2fe;
+    transform: scale(1.01);
+}
+
+tbody td {
+    padding: 15px;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.95);
+    margin-top: 40px;
+    box-shadow: 0 -10px 30px rgba(0, 0, 0, 0.15);
+}
+
+footer p {
+    font-size: 0.9rem;
+    color: #203a43;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    table {
+        font-size: 0.85rem;
+    }
+
+    thead th,
+    tbody td {
+        padding: 12px;
+    }
+}
